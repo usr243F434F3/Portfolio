@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barthélémy Joris — Community Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <p class="loader__label">Chargement du portfolio de</p>
+      <p class="loader__name">Barthélémy Joris</p>
+      <div class="loader__bar-wrap"><div class="loader__bar" id="loaderBar"></div></div>
+      <p class="loader__pct" id="loaderPct">0%</p>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo">JB<span class="nav__logo-dot">.</span></a>
+    <nav class="nav__links">
+      <a href="#profil">Mon profil</a>
+      <a href="#parcours">Mon parcours</a>
+      <a href="#competences">Mes compétences</a>
+      <a href="#realisations">Mes réalisations</a>
+      <a href="#contact">Me recruter</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="hero__content">
+
+      <div class="hero__photo-col">
+        <div class="hero__photo-wrap" id="heroPhoto">
+          <img src="photoportofioloo.png" alt="Barthélémy Joris" />
+          <div class="hero__photo-overlay"></div>
+          <div class="hero__photo-ring"></div>
+        </div>
+      </div>
+
+      <div class="hero__left">
+        <div class="hero__badge"><span class="hero__dot"></span>À la recherche d'une alternance</div>
+        <h1 class="hero__name">
+          <span class="hero__name-first">Barthélémy</span>
+          <span class="hero__name-last">Joris<span class="hero__cursor"></span></span>
+        </h1>
+        <p class="hero__title-role">Futur Chargé de Communication</p>
+        <p class="hero__subtitle">Stratégie digitale &amp; Communication</p>
+        <blockquote class="hero__quote">"Donner de la voix aux marques qui ont quelque chose à dire."</blockquote>
+        <div class="hero__actions">
+          <a href="#contact" class="btn-primary">Me contacter</a>
+          <a href="cv barthelemy joris.pdf" download class="btn-outline" id="btnCV">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Télécharger mon CV
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="ticker">
+    <div class="ticker__track" id="tickerTrack">
+      <span>Stratégie digitale</span><span class="ticker__sep">·</span>
+      <span>Gestion de communauté</span><span class="ticker__sep">·</span>
+      <span>Création de contenu</span><span class="ticker__sep">·</span>
+      <span>Identité de marque</span><span class="ticker__sep">·</span>
+      <span>Réseaux sociaux</span><span class="ticker__sep">·</span>
+      <span>Narration de marque</span><span class="ticker__sep">·</span>
+      <span>Marketing d'influence</span><span class="ticker__sep">·</span>
+      <span>Rédaction persuasive</span><span class="ticker__sep">·</span>
+      <span>Analyse de données</span><span class="ticker__sep">·</span>
+      <span>Communication digitale</span><span class="ticker__sep">·</span>
+      <span>Engagement</span><span class="ticker__sep">·</span>
+      <span>Veille stratégique</span><span class="ticker__sep">·</span>
+      <span>Stratégie digitale</span><span class="ticker__sep">·</span>
+      <span>Gestion de communauté</span><span class="ticker__sep">·</span>
+      <span>Création de contenu</span><span class="ticker__sep">·</span>
+      <span>Identité de marque</span><span class="ticker__sep">·</span>
+      <span>Réseaux sociaux</span><span class="ticker__sep">·</span>
+      <span>Narration de marque</span><span class="ticker__sep">·</span>
+      <span>Marketing d'influence</span><span class="ticker__sep">·</span>
+      <span>Rédaction persuasive</span><span class="ticker__sep">·</span>
+      <span>Analyse de données</span><span class="ticker__sep">·</span>
+      <span>Communication digitale</span><span class="ticker__sep">·</span>
+      <span>Engagement</span><span class="ticker__sep">·</span>
+      <span>Veille stratégique</span><span class="ticker__sep">·</span>
+    </div>
+  </div>
+
+  <section class="section" id="profil">
+    <div class="section__label">
+      <span class="section__num">01</span>
+      <span class="section__name">Mon profil</span>
+    </div>
+    <div class="profil">
+      <div class="profil__left">
+        <div class="profil__bio fade-up">
+          <p>Étudiant en <strong>BUT Communication</strong> à l'IUT de Dijon, je me spécialise dans la <strong>stratégie digitale</strong>, le <strong>community management</strong> et la communication événementielle. Passionné par les réseaux sociaux et la création de contenu, je construis des présences de marque cohérentes et engageantes.</p>
+          <p>À travers mes expériences en agence, en institution publique et en grande distribution, j'ai développé une <strong>polyvalence rare</strong> : de la production visuelle à la gestion de communautés, en passant par l'analyse de performance et la coordination de projets.</p>
+        </div>
+
+        <div class="profil__cards fade-up">
+          <div class="info-card">
+            <p class="info-card__label">Localisation</p>
+            <p class="info-card__value">Dijon, France</p>
+          </div>
+          <div class="info-card info-card--link-row">
+            <div class="info-card__row">
+              <div>
+                <p class="info-card__label">Formation</p>
+                <p class="info-card__value">BUT Communication — IUT de Dijon</p>
+              </div>
+              <a href="https://iutdijon.u-bourgogne.fr" target="_blank" rel="noopener" class="info-card__ext-btn" aria-label="Voir le site de l'IUT de Dijon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="info-card">
+            <p class="info-card__label">Spécialisation</p>
+            <p class="info-card__value">Communication événementielle · Marketing · Stratégie digitale</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card__label">Langues</p>
+            <div class="lang-switch">
+              <button class="lang-switch__btn lang-switch__btn--prev" id="langBtnPrev" aria-label="Langue précédente">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <div class="lang-switch__display">
+                <span class="lang-switch__name" id="langName">Anglais</span>
+                <span class="lang-switch__level" id="langLevel">B2 — Écrit &amp; Parlé</span>
+              </div>
+              <button class="lang-switch__btn lang-switch__btn--next" id="langBtnNext" aria-label="Langue suivante">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card__label">Outils</p>
+            <div class="outils-list">
+              <a href="https://www.canva.com" target="_blank" rel="noopener" class="outil-tag">Canva</a>
+              <a href="https://www.capcut.com" target="_blank" rel="noopener" class="outil-tag">CapCut</a>
+              <a href="https://www.adobe.com/fr/creativecloud.html" target="_blank" rel="noopener" class="outil-tag">Suite Adobe</a>
+              <a href="https://www.anthropic.com/claude" target="_blank" rel="noopener" class="outil-tag">Claude AI</a>
+              <a href="https://chat.openai.com" target="_blank" rel="noopener" class="outil-tag">ChatGPT</a>
+              <a href="https://www.notion.so" target="_blank" rel="noopener" class="outil-tag">Notion</a>
+              <a href="https://business.facebook.com" target="_blank" rel="noopener" class="outil-tag">Meta Business Suite</a>
+              <a href="https://ads.google.com" target="_blank" rel="noopener" class="outil-tag">Google Ads</a>
+              <a href="https://www.hootsuite.com" target="_blank" rel="noopener" class="outil-tag">Hootsuite</a>
+              <a href="https://later.com" target="_blank" rel="noopener" class="outil-tag">Later</a>
+              <a href="https://analytics.google.com" target="_blank" rel="noopener" class="outil-tag">Google Analytics</a>
+              <a href="https://trello.com" target="_blank" rel="noopener" class="outil-tag">Trello</a>
+              <a href="https://wordpress.com" target="_blank" rel="noopener" class="outil-tag">WordPress</a>
+              <a href="https://www.tiktok.com" target="_blank" rel="noopener" class="outil-tag">TikTok</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profil__stats fade-up">
+        <a href="#realisations" class="stat stat--link">
+          <span class="stat__num">15</span>
+          <span class="stat__label">SAÉ réalisées</span>
+          <span class="stat__sub">Situations d'apprentissage évaluées</span>
+        </a>
+        <a href="#parcours" class="stat stat--link">
+          <span class="stat__num">3</span>
+          <span class="stat__label">Stages effectués</span>
+        </a>
+        <div class="stat">
+          <span class="stat__num">5+</span>
+          <span class="stat__label">Années d'expérience</span>
+        </div>
+        <a href="#realisations" class="stat stat--link">
+          <span class="stat__num">5</span>
+          <span class="stat__label">Projets de communication</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="softskills fade-up">
+      <p class="softskills__label">Soft skills</p>
+      <div class="softskills__grid">
+        <div class="ss-card">
+          <div class="ss-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <h4 class="ss-card__title">Réactivité éditoriale</h4>
+          <p class="ss-card__desc">Surveiller l'actualité <strong>en temps réel</strong> et produire un contenu pertinent rapidement après un événement ou une tendance.</p>
+        </div>
+        <div class="ss-card">
+          <div class="ss-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/></svg></div>
+          <h4 class="ss-card__title">Vision stratégique</h4>
+          <p class="ss-card__desc">Concevoir une communication alignée sur les <strong>objectifs business</strong>, avec une lecture claire des enjeux de marque à court et long terme.</p>
+        </div>
+        <div class="ss-card">
+          <div class="ss-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h4 class="ss-card__title">Intelligence relationnelle</h4>
+          <p class="ss-card__desc">Fédérer une équipe, collaborer avec des intervenants variés et <strong>adapter sa communication</strong> selon les interlocuteurs.</p>
+        </div>
+        <div class="ss-card">
+          <div class="ss-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h4 class="ss-card__title">Sens de l'analyse</h4>
+          <p class="ss-card__desc">Interpréter les données de performance, identifier les <strong>leviers d'optimisation</strong> et transformer les insights en décisions concrètes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="parcours">
+    <div class="section__label">
+      <span class="section__num">02</span>
+      <span class="section__name">Mon parcours</span>
+    </div>
+    <div class="parcours">
+      <div class="parcours__header">
+        <span></span>
+        <span>Expériences</span>
+        <span>Période</span>
+        <span>Statut</span>
+        <span></span>
+      </div>
+
+      <div class="exp-item fade-up">
+        <span class="exp-item__dot"></span>
+        <div class="exp-item__main"><p class="exp-item__title">Stage Communication — Intermarché</p><p class="exp-item__sub">Stage · Lyon</p></div>
+        <span class="exp-item__period">Avril – Juin 2026</span>
+        <span class="exp-item__status exp-item__status--encours">En cours</span>
+        <button class="exp-item__toggle" aria-label="Détail"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="exp-item__detail"><div class="exp-item__detail-inner">
+          <div class="exp-item__detail-grid">
+            <div><span class="exp-item__dl">Poste</span><span class="exp-item__dd">Chargé de communication</span></div>
+            <div><span class="exp-item__dl">Type</span><span class="exp-item__dd">Stage 2 mois — Convention IUT</span></div>
+            <div><span class="exp-item__dl">Période</span><span class="exp-item__dd">Avril – Juin 2026</span></div>
+            <div><span class="exp-item__dl">Statut</span><span class="exp-item__dd exp-item__dd--encours">En cours</span></div>
+          </div>
+          <p class="exp-item__desc">Intégré au sein de l'équipe communication d'un magasin Intermarché à Lyon, je participe à la création des supports locaux, à <strong>l'animation des réseaux sociaux</strong> et à la mise en place d'actions promotionnelles.</p>
+          <p class="exp-item__results"><strong>Objectifs :</strong> Développer la <strong>présence digitale</strong>, augmenter l'engagement sur les réseaux sociaux et produire des supports visuels cohérents avec la charte Intermarché.</p>
+        </div></div>
+      </div>
+
+      <div class="exp-item fade-up">
+        <span class="exp-item__dot"></span>
+        <div class="exp-item__main"><p class="exp-item__title">Stage Communication — France Travail</p><p class="exp-item__sub">Stage · Agence de Valmy, Dijon</p></div>
+        <span class="exp-item__period">Mai – Juin 2025</span>
+        <span class="exp-item__status exp-item__status--termine">Terminé</span>
+        <button class="exp-item__toggle" aria-label="Détail"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="exp-item__detail"><div class="exp-item__detail-inner">
+          <div class="exp-item__detail-grid">
+            <div><span class="exp-item__dl">Poste</span><span class="exp-item__dd">Assistant communication</span></div>
+            <div><span class="exp-item__dl">Type</span><span class="exp-item__dd">Stage conventionné — IUT</span></div>
+            <div><span class="exp-item__dl">Période</span><span class="exp-item__dd">Mai – Juin 2025</span></div>
+            <div><span class="exp-item__dl">Statut</span><span class="exp-item__dd">Terminé</span></div>
+          </div>
+          <p class="exp-item__desc">Au sein de l'agence France Travail de Valmy (Dijon), j'ai contribué à la <strong>communication interne et externe</strong>, produit des supports et créé des contenus pour les réseaux sociaux.</p>
+          <p class="exp-item__results"><strong>Résultats :</strong> Supports validés par l'équipe, montée en compétences sur les outils institutionnels.</p>
+        </div></div>
+      </div>
+
+      <div class="exp-item fade-up">
+        <span class="exp-item__dot"></span>
+        <div class="exp-item__main"><p class="exp-item__title">Stage Ressources Humaines — France Travail</p><p class="exp-item__sub">Stage · Agence de Valmy, Dijon</p></div>
+        <span class="exp-item__period">Mai – Juin 2024</span>
+        <span class="exp-item__status exp-item__status--termine">Terminé</span>
+        <button class="exp-item__toggle" aria-label="Détail"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="exp-item__detail"><div class="exp-item__detail-inner">
+          <div class="exp-item__detail-grid">
+            <div><span class="exp-item__dl">Poste</span><span class="exp-item__dd">Assistant RH</span></div>
+            <div><span class="exp-item__dl">Type</span><span class="exp-item__dd">Stage conventionné — IUT</span></div>
+            <div><span class="exp-item__dl">Période</span><span class="exp-item__dd">Mai – Juin 2024</span></div>
+            <div><span class="exp-item__dl">Statut</span><span class="exp-item__dd">Terminé</span></div>
+          </div>
+          <p class="exp-item__desc">Accueil et suivi des demandeurs d'emploi, rédaction de comptes-rendus et mise à jour des outils de gestion interne.</p>
+          <p class="exp-item__results"><strong>Résultats :</strong> Développement des compétences en communication interpersonnelle et compréhension d'une structure publique.</p>
+        </div></div>
+      </div>
+
+      <div class="exp-item fade-up">
+        <span class="exp-item__dot"></span>
+        <div class="exp-item__main"><p class="exp-item__title">Création &amp; Réalisation de contenus vidéo pour studios et plateformes</p><p class="exp-item__sub">Projet personnel · Réseaux sociaux</p></div>
+        <span class="exp-item__period">Avril 2023 - Aujourd'hui</span>
+        <span class="exp-item__status exp-item__status--encours">En cours</span>
+        <button class="exp-item__toggle" aria-label="Détail"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="exp-item__detail"><div class="exp-item__detail-inner">
+          <div class="exp-item__detail-grid">
+            <div><span class="exp-item__dl">Poste</span><span class="exp-item__dd">Créateur de contenu</span></div>
+            <div><span class="exp-item__dl">Type</span><span class="exp-item__dd">Projet personnel</span></div>
+            <div><span class="exp-item__dl">Période</span><span class="exp-item__dd">Avril 2023</span></div>
+            <div><span class="exp-item__dl">Statut</span><span class="exp-item__dd exp-item__dd--encours">En cours</span></div>
+          </div>
+          <p class="exp-item__desc">Création et animation de plusieurs comptes TikTok en autonomie. Production de contenus vidéo (montage à l'aide de plusieurs logiciels comme AfterEffects, Premiere Pro etc), gestion des communautés et collaboration avec plusieurs marques et groupes comme <strong>Lionsgate, Hulu, Canal+</strong>.</p>
+          <p class="exp-item__results"><strong>Résultats :</strong> <strong>Plusieurs centaines de millions de vues</strong> cumulées. Maîtrise des algorithmes TikTok et des mécaniques de contenu viral.</p>
+        </div></div>
+      </div>
+
+      <div class="exp-item fade-up">
+        <span class="exp-item__dot"></span>
+        <div class="exp-item__main"><p class="exp-item__title">Stage — Meroje &amp; Co</p><p class="exp-item__sub">Agence de communication · Meyzieu, Lyon</p></div>
+        <span class="exp-item__period">Décembre 2019</span>
+        <span class="exp-item__status exp-item__status--termine">Terminé</span>
+        <button class="exp-item__toggle" aria-label="Détail"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="exp-item__detail"><div class="exp-item__detail-inner">
+          <div class="exp-item__detail-grid">
+            <div><span class="exp-item__dl">Poste</span><span class="exp-item__dd">Assistant de communication</span></div>
+            <div><span class="exp-item__dl">Type</span><span class="exp-item__dd">Stage d'observation — 1 semaine</span></div>
+            <div><span class="exp-item__dl">Période</span><span class="exp-item__dd">Décembre 2019</span></div>
+            <div><span class="exp-item__dl">Statut</span><span class="exp-item__dd">Terminé</span></div>
+          </div>
+          <p class="exp-item__desc">Première immersion au sein de Meroje &amp; Co, agence basée à Meyzieu (Lyon), spécialisée dans la photographie et l'événementiel. Participation à la couverture d'événements aux côtés d'un photographe professionnel.</p>
+          <p class="exp-item__results"><strong>Résultats :</strong> Découverte du monde de la communication professionnelle. Expérience fondatrice qui a confirmé ma vocation.</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="competences">
+    <div class="section__label">
+      <span class="section__num">03</span>
+      <span class="section__name">Mes compétences</span>
+    </div>
+    <div class="competences__intro fade-up">
+      <h2 class="competences__title">Ce que j'apporte au secteur de la communication</h2>
+      <p class="competences__desc">Cliquez sur "VOIR PLUS" pour découvrir les compétences que j'ai acquises à l'IUT et dans mes projets personnels et leurs applications concrètes.</p>
+    </div>
+    <div class="competences__grid">
+      <div class="comp-card fade-up" data-modal="modal-comp-1"><div class="comp-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3 class="comp-card__title">Stratégie de contenu</h3><p class="comp-card__teaser">Planification éditoriale, ligne éditoriale, calendrier de publication adapté à chaque plateforme.</p><div class="comp-card__cta"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span>Voir plus</span></div></div>
+      <div class="comp-card fade-up" data-modal="modal-comp-2"><div class="comp-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></div><h3 class="comp-card__title">Community Management</h3><p class="comp-card__teaser">Animation de communautés, modération, gestion de crise et développement de l'engagement.</p><div class="comp-card__cta"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span>Voir plus</span></div></div>
+      <div class="comp-card fade-up" data-modal="modal-comp-3"><div class="comp-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><h3 class="comp-card__title">Design &amp; Création visuelle</h3><p class="comp-card__teaser">Identité visuelle, supports print et digital, charte graphique.</p><div class="comp-card__cta"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span>Voir plus</span></div></div>
+      <div class="comp-card fade-up" data-modal="modal-comp-4"><div class="comp-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3 class="comp-card__title">Analyse &amp; Reporting</h3><p class="comp-card__teaser">KPIs, tableaux de bord, analyse de performance et recommandations.</p><div class="comp-card__cta"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span>Voir plus</span></div></div>
+      <div class="comp-card fade-up" data-modal="modal-comp-5"><div class="comp-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><h3 class="comp-card__title">Copywriting</h3><p class="comp-card__teaser">Rédaction persuasive, storytelling de marque, ton éditorial et SEO.</p><div class="comp-card__cta"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span>Voir plus</span></div></div>
+      <div class="comp-card fade-up" data-modal="modal-comp-6"><div class="comp-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3 class="comp-card__title">Gestion de projet</h3><p class="comp-card__teaser">Coordination d'équipes, planification des livrables et pilotage de projets.</p><div class="comp-card__cta"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span>Voir plus</span></div></div>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="modal-comp-1"><div class="modal-box"><button class="modal-close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3 class="modal-title">Stratégie de contenu</h3><p class="modal-text">Une bonne communication ne s'improvise pas, elle s'anticipe. J'élabore des <strong>stratégies de contenu</strong> en me posant les bonnes questions : à qui je parle, sur quel réseau, et avec quel objectif ? Je crée des <strong>plannings éditoriaux</strong> pour assurer une présence régulière et pertinente. Mon but est de proposer le bon message, au bon moment, pour capter l'attention de l'audience et répondre aux objectifs de l'organisation.</p></div></div>
+  <div class="modal-overlay" id="modal-comp-2"><div class="modal-box"><button class="modal-close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></div><h3 class="modal-title">Community Management</h3><p class="modal-text">Gérer les réseaux sociaux, ce n'est pas juste poster des images, c'est <strong>créer du lien</strong>. J'anime et je fédère des communautés en ligne en publiant des contenus engageants et en interagissant avec les abonnés. Je sais m'adapter aux codes de chaque plateforme (<strong>TikTok, Instagram, LinkedIn</strong>) pour instaurer un dialogue naturel entre la marque et son public, tout en veillant à l'e-réputation.</p></div></div>
+  <div class="modal-overlay" id="modal-comp-3"><div class="modal-box"><button class="modal-close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><h3 class="modal-title">Design &amp; Création visuelle</h3><p class="modal-text">L'image est souvent le premier contact qu'une personne a avec une marque. J'utilise différents outils de création pour concevoir des visuels attractifs : affiches, publications pour les réseaux, maquettes de site web ou logos. Je veille toujours à respecter une charte graphique pour garantir une identité visuelle cohérente, professionnelle et agréable à l'œil.</p></div></div>
+  <div class="modal-overlay" id="modal-comp-4"><div class="modal-box"><button class="modal-close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3 class="modal-title">Analyse &amp; Reporting</h3><p class="modal-text">En communication, il est essentiel de savoir si nos actions ont fonctionné. Je prends le temps d'analyser les statistiques (<strong>taux d'engagement, portée, clics</strong>) pour comprendre le comportement de l'audience. Grâce à ces données, je peux ajuster ma stratégie, voir ce qui plaît le plus, et proposer des <strong>recommandations concrètes</strong> pour toujours faire mieux à la prochaine campagne.</p></div></div>
+  <div class="modal-overlay" id="modal-comp-5"><div class="modal-box"><button class="modal-close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><h3 class="modal-title">Copywriting</h3><p class="modal-text">Savoir choisir les bons mots fait toute la différence. J'utilise le copywriting pour rédiger des textes <strong>clairs, percutants et persuasifs</strong>. Que ce soit pour la légende d'un post Instagram, un article de blog ou une affiche, je structure mon message pour accrocher le lecteur, susciter son intérêt et <strong>l'inciter à passer à l'action</strong>, tout en gardant un ton naturel et adapté à la cible.</p></div></div>
+  <div class="modal-overlay" id="modal-comp-6"><div class="modal-box"><button class="modal-close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3 class="modal-title">Gestion de projet</h3><p class="modal-text">Un projet de communication demande beaucoup d'organisation. Je suis capable de <strong>coordonner différentes missions</strong> en même temps, de respecter des délais (rétroplannings) et de travailler en équipe. De la <strong>prise de brief jusqu'au rendu final</strong>, je veille à ce que chaque étape s'enchaîne de manière fluide et logique, en trouvant rapidement des solutions face aux imprévus.</p></div></div>
+
+  <div class="citation-block fade-up">
+    <blockquote class="citation-block__text">"La communication est une science difficile. Ce n'est pas une science exacte. Ça s'apprend et ça se cultive."</blockquote>
+    <cite class="citation-block__author">Jean-Luc Lagardère — Entrepreneur &amp; dirigeant de médias</cite>
+  </div>
+
+  <section class="section" id="realisations">
+    <div class="section__label">
+      <span class="section__num">04</span>
+      <span class="section__name">Mes réalisations</span>
+    </div>
+    <div class="realisations__grid">
+      <article class="real-card fade-up" data-modal="modal-real-1">
+        <div class="real-card__img-wrap"><img src="projet1.png" alt="JPO Génie Biologique" /></div>
+        <div class="real-card__body">
+          <div class="real-card__meta"><span class="real-card__date">Décembre 2025 – Fév. 2026</span><span class="real-card__cat">Stratégie événementielle</span></div>
+          <h3 class="real-card__title">SAÉ — Journée Portes Ouvertes Génie Biologique</h3>
+          <p class="real-card__desc">Stratégie de communication globale pour les JPO du département Génie Biologique : SWOT, supports visuels, vidéo d'interview et coordination des équipes bénévoles.</p>
+          <button class="real-card__btn">Voir le détail</button>
+        </div>
+      </article>
+      <article class="real-card fade-up" data-modal="modal-real-2">
+        <div class="real-card__img-wrap"><img src="projet2.png" alt="Solidélice" /></div>
+        <div class="real-card__body">
+          <div class="real-card__meta"><span class="real-card__date">2025</span><span class="real-card__cat">Identité de marque</span></div>
+          <h3 class="real-card__title">SAÉ — Solidélice</h3>
+          <p class="real-card__desc">Création complète de l'identité de marque d'une association solidaire anti-gaspillage : charte graphique, stratégie digitale, maquette web et calendrier éditorial.</p>
+          <button class="real-card__btn">Voir le détail</button>
+        </div>
+      </article>
+      <article class="real-card fade-up" data-modal="modal-real-3">
+        <div class="real-card__img-wrap"><img src="projet3.png" alt="TikTok marques" /></div>
+        <div class="real-card__body">
+          <div class="real-card__meta"><span class="real-card__date">2023 – présent</span><span class="real-card__cat">Création de contenu</span></div>
+          <h3 class="real-card__title">Création de contenus TikTok pour les marques</h3>
+          <p class="real-card__desc">Production de vidéos sponsorisées pour des marques et sorties de films : analyse du brief, montage, adaptation aux tendances TikTok pour maximiser l'engagement.</p>
+          <button class="real-card__btn">Voir le détail</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="modal-real-1"><div class="modal-box modal-box--wide"><button class="modal-close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-real-meta"><span class="real-card__date">Décembre 2025 – Fév. 2026</span><span class="real-card__cat">Stratégie événementielle</span></div><h3 class="modal-title">SAÉ — Journée Portes Ouvertes Génie Biologique</h3><div class="modal-real-img"><img src="imageprojet1.png" alt="JPO Génie Biologique" style="width:100%;height:100%;object-fit:cover;" /></div><p class="modal-section-label">Description</p><p class="modal-text" style="margin-bottom:1.5rem">Pour ce projet, j'ai eu l'opportunité de concevoir et de déployer la <strong>stratégie de communication globale</strong> pour les Journées Portes Ouvertes du département Génie Biologique. Mon travail a commencé par une <strong>analyse SWOT</strong> et la définition précise des cibles (lycéens, parents) pour adapter le message. J'ai ensuite créé de nombreux supports visuels et digitaux : publications Instagram, vidéo d'interview dynamique et affiches interactives. J'ai également géré la communication interne en organisant les équipes de bénévoles pour le jour J. Un projet complet, de la réflexion stratégique jusqu'à la création concrète des contenus.</p><p class="modal-section-label">Ce que ça a apporté à mon expérience en communication</p><p class="modal-text" style="margin-bottom:1.5rem">Ce projet a été un véritable <strong>baptême</strong> en <strong>gestion de projet événementiel</strong> et en <strong>communication 360°</strong>. J'ai pu expérimenter concrètement le passage de l'analyse stratégique à la phase très opérationnelle sur le terrain. Cela m'a appris à ne pas me contenter de créer de beaux visuels, mais à concevoir des <strong>supports de médiation pertinents</strong>, pensés pour un parcours visiteur fluide. Gérer la communication interne m'a aussi prouvé qu'une bonne stratégie externe ne fonctionne pas sans des <strong>équipes alignées et briefées</strong> en interne. J'en ressors avec une vision beaucoup plus <strong>transverse du métier</strong>.</p><p class="modal-section-label">Compétences mobilisées</p><div class="modal-tags"><span>Stratégie de communication</span><span>Création de contenus</span><span>Gestion d'événement</span><span>Analyse de cibles</span><span>Communication interne</span></div></div></div>
+  <div class="modal-overlay" id="modal-real-2"><div class="modal-box modal-box--wide"><button class="modal-close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-real-meta"><span class="real-card__date">2025</span><span class="real-card__cat">Identité de marque</span></div><h3 class="modal-title">SAÉ — Solidélice</h3><div class="modal-real-img"><img src="imageprojet2.png" alt="Solidélice" style="width:100%;height:100%;object-fit:cover;" /></div><p class="modal-section-label">Description</p><p class="modal-text" style="margin-bottom:1.5rem">Solidélice est un projet de création d'association solidaire et anti-gaspillage pour lequel j'ai construit toute l'<strong>identité de marque</strong> en partant de zéro. J'ai d'abord élaboré une <strong>stratégie de communication digitale</strong> ciblée sur Instagram et TikTok. J'ai ensuite créé la charte graphique complète (logo, couleurs, typographies) pour donner une image chaleureuse et moderne au projet. J'ai conçu la maquette du site web en pensant à l'expérience utilisateur (<strong>UI/UX</strong>) et établi un calendrier éditorial précis pour planifier les publications.</p><p class="modal-section-label">Ce que ça a apporté à mon expérience en communication</p><p class="modal-text" style="margin-bottom:1.5rem">Solidélice m'a permis de me glisser dans la peau d'un véritable <strong>Brand Manager</strong>. J'ai appris à construire le <strong>socle et l'ADN d'une marque</strong> de A à Z, en traduisant des valeurs fortes en éléments graphiques et sémantiques cohérents. Travailler sur l'arborescence et l'<strong>UI/UX</strong> du site web a particulièrement enrichi mon approche digitale : j'ai compris comment structurer l'information pour guider l'utilisateur vers un <strong>tunnel de conversion</strong> (comme l'inscription à un atelier). Enfin, l'élaboration du <strong>planning éditorial</strong> m'a forgé une vraie rigueur dans la stratégie de <strong>content marketing</strong> sur le long terme.</p><p class="modal-section-label">Compétences mobilisées</p><div class="modal-tags"><span>Identité visuelle</span><span>Stratégie digitale</span><span>UI/UX Design</span><span>Planning éditorial</span><span>Création de marque</span></div></div></div>
+  <div class="modal-overlay" id="modal-real-3"><div class="modal-box modal-box--wide"><button class="modal-close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-real-meta"><span class="real-card__date">2023 – présent</span><span class="real-card__cat">Création de contenu</span></div><div class="modal-title-row"><h3 class="modal-title">Création de contenus TikTok pour les marques</h3><a href="https://www.tiktok.com/@lionsgate/video/7620829557918059790" target="_blank" rel="noopener" class="modal-tiktok-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Voir ma réalisation</a></div><div class="modal-real-img"><img src="imageprojet3.png" alt="TikTok marques" style="width:100%;height:100%;object-fit:cover;" /></div><p class="modal-section-label">Description</p><p class="modal-text" style="margin-bottom:1.5rem">En parallèle de mes études, je suis contacté par des marques pour promouvoir leurs produits ou des sorties de films directement sur TikTok. Je gère <strong>l'ensemble du processus créatif</strong> : de l'analyse du besoin de la marque jusqu'au montage final. Mon objectif est de <strong>capter l'attention dès les premières secondes</strong>, en utilisant les codes, les musiques et les tendances actuelles de la plateforme. J'adapte mon montage et mon discours pour générer un maximum d'engagement, tout en mettant en valeur le produit de manière naturelle et divertissante.</p><p class="modal-section-label">Ce que ça a apporté à mon expérience en communication</p><p class="modal-text" style="margin-bottom:1.5rem">Cette expérience me plonge quotidiennement dans la réalité du <strong>Social Media Management</strong> et de la création <strong>UGC (User Generated Content)</strong>. J'ai développé une forte réactivité pour faire du <strong>trendjacking</strong> et jouer avec les algorithmes afin de booster la <strong>visibilité organique</strong>. Au-delà du montage, j'ai surtout appris à maîtriser l'art du <strong>storytelling court</strong> et du <strong>snack content</strong> pour maximiser la rétention et le taux d'engagement. Échanger directement avec des annonceurs m'a également appris à respecter un <strong>brief créatif strict</strong> tout en garantissant des résultats, ce qui m'a donné une vision très orientée <strong>ROI</strong> (retour sur investissement) de mon travail créatif.</p><p class="modal-section-label">Compétences mobilisées</p><div class="modal-tags"><span>Montage vidéo</span><span>Création de contenu (UGC)</span><span>Veille de tendances</span><span>Relations marques</span><span>Social Media Management</span></div></div></div>
+
+  <section class="section section--last" id="contact">
+    <div class="section__label">
+      <span class="section__num">05</span>
+      <span class="section__name">Me recruter</span>
+    </div>
+    <div class="contact">
+      <div class="contact__left fade-up">
+        <h2 class="contact__title">Nous devons<br><em>collaborer ensemble.</em></h2>
+<p class="contact__sub">Ouvert aux opportunités d'<strong>alternance</strong>, de <strong>stage</strong> ou de <strong>collaboration</strong> dans la <strong>communication</strong> et la stratégie digitale.</p>      </div>
+      <div class="contact__right fade-up">
+        <div class="contact-item" id="copyEmail">
+          <div class="contact-item__left"><span class="contact-item__label">Email</span><span class="contact-item__value">jorisbarthelemypro@gmail.com</span></div>
+          <span class="contact-item__action">Copier</span>
+        </div>
+        <a href="https://www.linkedin.com/in/joris-b-1b50b3341/" class="contact-item contact-item--link" target="_blank" rel="noopener">
+          <div class="contact-item__left"><span class="contact-item__label">LinkedIn</span><span class="contact-item__value">Voir mon profil</span></div>
+          <span class="contact-item__arrow">→</span>
+        </a>
+        
+        <a href="cv barthelemy joris.pdf" download class="contact-item contact-item--link" id="btnCVContact">
+          <div class="contact-item__left"><span class="contact-item__label">CV</span><span class="contact-item__value">Télécharger mon CV (PDF)</span></div>
+          <span class="contact-item__arrow">↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+    <footer class="footer">
+    <span>© 2026 — Barthélémy Joris</span>
+    <span>Dijon, France</span>
+  </footer>
+
+  <div class="toast" id="toast">Email copié !</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
