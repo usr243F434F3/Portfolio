@@ -1201,112 +1201,19 @@ img { display: block; max-width: 100%; }
 }
 .ledger__results strong { color: var(--ink); font-weight: 600; }
 
-/* ===== Ledger — MOBILE (≤900px) =====
-   Stack chaque "chapitre" verticalement, sans chevauchement,
-   sans débordement, avec une logique grid robuste. */
 @media (max-width: 900px) {
-  .ledger { gap: 0.75rem; }
-
   .ledger__row {
-    /* 2 colonnes : contenu (fluide) + bouton toggle (fixe).
-       Toutes les autres pièces s'empilent en lignes successives. */
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 32px;
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
-    column-gap: 1rem;
-    row-gap: 0.5rem;
-    align-items: start;
-    padding: 1.1rem 1.1rem 1.2rem;
+    grid-template-columns: 30px 1fr 24px;
+    grid-template-rows: auto auto auto;
+    gap: 0.4rem 0.8rem;
+    padding: 1.2rem;
   }
-
-  /* Ligne 1 : numéro + toggle alignés */
-  .ledger__num {
-    grid-column: 1;
-    grid-row: 1;
-    align-self: center;
-    font-size: 11px;
-    letter-spacing: 0.06em;
-  }
-  .ledger__toggle {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: center;
-    justify-self: end;
-  }
-
-  /* Ligne 2 : titre, sur toute la largeur */
-  .ledger__title-wrap {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    min-width: 0;
-  }
-  .ledger__title {
-    font-size: clamp(1rem, 4.2vw, 1.15rem);
-    line-height: 1.3;
-    word-wrap: break-word;
-    overflow-wrap: anywhere;
-  }
-
-  /* Ligne 3 : sous-titre / rôle */
-  .ledger__period-wrap {
-    grid-column: 1 / -1;
-    grid-row: 3;
-    min-width: 0;
-    display: block;
-  }
-  .ledger__sub {
-    font-size: 13px;
-    line-height: 1.45;
-    color: var(--ink-3);
-    word-wrap: break-word;
-    overflow-wrap: anywhere;
-  }
-
-  /* Ligne 4 : période */
-  .ledger__period {
-    grid-column: 1 / -1;
-    grid-row: 4;
-    font-size: 12px;
-    color: var(--ink-3);
-  }
-  /* Ligne 5 : status badge */
-  .ledger__status {
-    grid-column: 1 / -1;
-    grid-row: 5;
-    justify-self: start;
-    font-size: 10px;
-    padding: 0.3rem 0.6rem;
-  }
-
-  /* Bloc dépliant : pleine largeur, structure verticale */
-  .ledger__detail {
-    grid-column: 1 / -1;
-    grid-row: 6;
-    width: 100%;
-  }
-  .ledger__detail-inner {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: none;
-    gap: 1rem;
-    padding-top: 1rem;
-    margin-top: 0.5rem;
-  }
-  .ledger__desc,
-  .ledger__results {
-    font-size: 0.92rem;
-    line-height: 1.6;
-    word-wrap: break-word;
-    overflow-wrap: anywhere;
-  }
-
-  /* Hover état fantôme désactivé sur tactile */
-  .ledger__row:hover {
-    transform: none;
-    background: var(--glass);
-    box-shadow: none;
-  }
+  .ledger__num { grid-row: 1; }
+  .ledger__title-wrap { grid-row: 1 / 3; grid-column: 2; }
+  .ledger__period-wrap { grid-row: 3; grid-column: 1 / 4; display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; }
+  .ledger__toggle { grid-row: 1; grid-column: 3; }
+  .ledger__detail { grid-column: 1 / 4; }
+  .ledger__detail-inner { grid-template-columns: 1fr; gap: 1rem; }
 }
 
 /* ===== Skills (glass cards w/ flip) ===== */
@@ -2126,8 +2033,9 @@ body::before {
   /* Soft skills already stacks */
   .softskills__title { font-size: clamp(1.5rem, 5vw, 2rem); }
 
-  /* Ledger rows — padding intermédiaire */
-  .ledger__row { padding: 1rem 1rem 1.1rem; }
+  /* Ledger rows — already adapted at 900; verify gap */
+  .ledger__row { padding: 1rem 0.5rem; }
+  .ledger__title { font-size: 1rem; }
 
   /* Skills — 2 cols, smaller */
   .skills { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
@@ -2181,15 +2089,13 @@ body::before {
   .kicker { flex-wrap: wrap; gap: 0.4rem; font-size: 11px; }
   .kicker__line { display: none; }
 
-  /* Ledger — ultra petit écran : padding plus serré */
+  /* Ledger collapse to 2 col layout */
   .ledger__row {
-    padding: 0.95rem 0.85rem 1rem;
-    column-gap: 0.6rem;
-    row-gap: 0.4rem;
+    grid-template-columns: 1fr 24px;
+    gap: 0.5rem 0.75rem;
   }
-  .ledger__title { font-size: clamp(0.95rem, 4.5vw, 1.05rem); }
-  .ledger__sub { font-size: 12.5px; }
-  .ledger__detail-inner { padding-top: 0.85rem; }
+  .ledger__year { grid-column: 1 / -1; font-size: 11px; }
+  .ledger__results { grid-column: 1 / -1; }
 
   /* Projects */
   .project {

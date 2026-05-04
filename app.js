@@ -14,8 +14,8 @@ const LANGS = [
 const EXPERIENCES = [
   {
     num: "01",
-    title: "Stage Communication — Intermarché",
-    sub: "Stage · Lyon",
+    title: "Stage Communication | Intermarché",
+    sub: "Stage · Dijon",
     period: "Avr → Juin 2026",
     status: "live",
     statusLabel: "En cours",
@@ -24,8 +24,8 @@ const EXPERIENCES = [
   },
   {
     num: "02",
-    title: "Stage Communication — France Travail",
-    sub: "Stage · Agence de Valmy, Dijon",
+    title: "Stage Communication | France Travail",
+    sub: "Stage · Direction Régionale France Travail de Valmy, Dijon",
     period: "Mai → Juin 2025",
     status: "past",
     statusLabel: "Terminé",
@@ -34,8 +34,8 @@ const EXPERIENCES = [
   },
   {
     num: "03",
-    title: "Stage Ressources Humaines — France Travail",
-    sub: "Stage · Agence de Valmy, Dijon",
+    title: "Stage Ressources Humaines | France Travail",
+    sub: "Stage · Direction Régionale France Travail de Valmy, Dijon",
     period: "Mai → Juin 2024",
     status: "past",
     statusLabel: "Terminé",
@@ -44,8 +44,8 @@ const EXPERIENCES = [
   },
   {
     num: "04",
-    title: "Création de contenus vidéo — Studios & plateformes",
-    sub: "Projet personnel · TikTok",
+    title: "Création de contenus vidéo | Studios & plateformes",
+    sub: "Projet personnel · TikTok - Instagram",
     period: "Avr 2023 → présent",
     status: "live",
     statusLabel: "En cours",
@@ -54,8 +54,8 @@ const EXPERIENCES = [
   },
   {
     num: "05",
-    title: "Stage Découverte — Meroje & Co",
-    sub: "Agence de communication · Meyzieu",
+    title: "Stage Découverte | Meroje & Co",
+    sub: "Agence de communication · Lyon",
     period: "Décembre 2019",
     status: "past",
     statusLabel: "Terminé",
@@ -74,8 +74,8 @@ const SKILLS = [
   {
     num: "B.02",
     title: "Community <em>management</em>",
-    teaser: "Créer du lien — pas juste poster des images.",
-    detail: "J'anime et fédère des communautés en ligne en publiant des contenus engageants et en interagissant avec les abonnés. Adaptation aux codes de TikTok, Instagram, LinkedIn pour instaurer un dialogue naturel — tout en veillant à l'e-réputation."
+    teaser: "Créer du lien pas juste poster des images.",
+    detail: "J'anime et fédère des communautés en ligne en publiant des contenus engageants et en interagissant avec les abonnés. Adaptation aux codes de TikTok, Instagram, LinkedIn pour instaurer un dialogue naturel tout en veillant à l'e-réputation."
   },
   {
     num: "B.03",
@@ -92,14 +92,14 @@ const SKILLS = [
   {
     num: "B.05",
     title: "<em>Copy</em>writing",
-    teaser: "Le mot juste — clair, percutant, persuasif.",
-    detail: "Rédaction structurée pour accrocher, susciter l'intérêt, inciter à passer à l'action — du post Instagram à l'article de blog en passant par l'affiche, en gardant un ton naturel et adapté à la cible."
+    teaser: "Le mot juste clair, percutant, persuasif.",
+    detail: "Rédaction structurée pour accrocher, susciter l'intérêt, inciter à passer à l'action du post Instagram à l'article de blog en passant par l'affiche, en gardant un ton naturel et adapté à la cible."
   },
   {
     num: "B.06",
     title: "Gestion de <em>projet</em>",
     teaser: "De la prise de brief au rendu final.",
-    detail: "Coordination de missions multiples, respect des délais (rétroplannings), travail en équipe. Chaque étape s'enchaîne, les imprévus trouvent une solution rapide — la livraison est tenue."
+    detail: "Coordination de missions multiples, respect des délais (rétroplannings), travail en équipe. Chaque étape s'enchaîne, les imprévus trouvent une solution rapide la livraison est tenue."
   }
 ];
 
@@ -107,19 +107,19 @@ const PROJECTS = [
   {
     num: "01",
     cat: "Stratégie événementielle",
-    title: "JPO Génie <em>Biologique</em>",
+    title: "JPO | Génie <em>Biologique</em>",
     date: "Déc 2025 — Fév 2026",
     cover: "assets/projet1.png",
     detail: "assets/imageprojet1.png",
-    description: "Pour ce projet, j'ai conçu et déployé la <strong>stratégie de communication globale</strong> des Journées Portes Ouvertes du département Génie Biologique. Analyse SWOT, définition des cibles (lycéens, parents), création de supports visuels et digitaux : publications Instagram, vidéo d'interview, affiches interactives. Coordination des équipes bénévoles le jour J — un projet 360° complet.",
-    learning: "Véritable baptême en <strong>gestion de projet événementiel</strong> et en communication 360°. Passage de l'analyse stratégique à l'opérationnel terrain. La création de supports pertinents passe par un parcours visiteur fluide — et la communication externe ne fonctionne pas sans des équipes alignées en interne. J'en ressors avec une vision transverse du métier.",
+    description: "Pour ce projet, j'ai conçu et déployé la <strong>stratégie de communication globale</strong> des Journées Portes Ouvertes du département Génie Biologique. Analyse SWOT, définition des cibles (lycéens, parents), création de supports visuels et digitaux : publications Instagram, vidéo d'interview, affiches interactives. Coordination des équipes bénévoles le jour J un projet 360° complet.",
+    learning: "Véritable baptême en <strong>gestion de projet événementiel</strong> et en communication 360°. Passage de l'analyse stratégique à l'opérationnel terrain. La création de supports pertinents passe par un parcours visiteur fluide et la communication externe ne fonctionne pas sans des équipes alignées en interne. J'en ressors avec une vision transverse du métier.",
     tags: ["Stratégie de communication", "Création de contenus", "Gestion d'événement", "Analyse de cibles", "Communication interne"]
   },
   {
     num: "02",
     cat: "Identité de marque",
-    title: "Solidélice — anti-<em>gaspillage</em>",
-    date: "2025",
+    title: "Solidélice | Association anti-<em>gaspillage</em>",
+    date: "Déc 2025",
     cover: "assets/projet2.png",
     detail: "assets/imageprojet2.png",
     description: "Solidélice : projet d'association solidaire et anti-gaspillage. Construction de toute l'<strong>identité de marque</strong> en partant de zéro : stratégie digitale ciblée Instagram/TikTok, charte graphique complète (logo, couleurs, typographies), maquette du site web pensée UX, calendrier éditorial.",
@@ -129,12 +129,12 @@ const PROJECTS = [
   {
     num: "03",
     cat: "Création de contenu",
-    title: "TikTok — sorties &amp; <em>marques</em>",
-    date: "2023 — présent",
+    title: "Réseaux Sociaux | Collaboration &amp; <em>marques</em>",
+    date: "2023 — Maintenant",
     cover: "assets/projet3.png",
     detail: "assets/imageprojet3.png",
-    description: "Contacté par des marques pour promouvoir produits ou sorties de films directement sur TikTok. Gestion de l'<strong>ensemble du processus créatif</strong> : analyse du besoin, montage final, captation de l'attention en quelques secondes. Codes, musiques et tendances actuelles — engagement maximisé tout en mettant le produit en valeur.",
-    learning: "Plongée quotidienne dans la réalité du <strong>Social Media Management</strong> et du contenu UGC. Réactivité forte sur le trendjacking, jeu avec les algorithmes pour booster la visibilité organique. Maîtrise du <strong>storytelling court</strong> et du snack content. Échanges directs avec les annonceurs : brief créatif strict + résultats — vision orientée ROI.",
+    description: "Contacté par des marques pour promouvoir produits ou sorties de films directement sur TikTok. Gestion de l'<strong>ensemble du processus créatif</strong> : analyse du besoin, montage final, captation de l'attention en quelques secondes. Codes, musiques et tendances actuelles engagement maximisé tout en mettant le produit en valeur.",
+    learning: "Plongée quotidienne dans la réalité du <strong>Social Media Management</strong> et du contenu UGC. Réactivité forte sur le trendjacking, jeu avec les algorithmes pour booster la visibilité organique. Maîtrise du <strong>storytelling court</strong> et du snack content. Échanges directs avec les annonceurs : brief créatif strict + résultats vision orientée ROI.",
     tags: ["Montage vidéo", "UGC", "Veille de tendances", "Relations marques", "Social Media Management"],
     extLink: "https://www.tiktok.com/@lionsgate/video/7620829557918059790"
   }
